@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "87947917470",
+    "project_id": "timekeeper-c9f63",
+    "storage_bucket": "timekeeper-c9f63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87947917470:android:08ed17aa8830c052abe38f",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87947917470-7r1icmlr6gs89koqrgfqi8bvbdjifh75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnjRL5ah38Sts2J52YiBZzCin5OrDv-gY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87947917470-7r1icmlr6gs89koqrgfqi8bvbdjifh75.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

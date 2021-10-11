@@ -1,7 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled/animated_screen.dart';
+import 'package:untitled/google_sign_in.dart';
 
 void main() {
   runApp(const FirstScreen());
@@ -17,9 +18,11 @@ class FirstScreen extends StatefulWidget {
 class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
+    Firebase.initializeApp();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: AnimatedSplashScreen(
+        backgroundColor: const Color(0xFF2b2b2c),
         splashIconSize: 100,
         duration: 1800,
         splashTransition: SplashTransition.fadeTransition,
@@ -30,13 +33,11 @@ class _FirstScreenState extends State<FirstScreen> {
                 animatedTexts: [
                   TypewriterAnimatedText(
                     "Welcome To",
-                    textStyle: TextStyle(fontSize: 35),
+                    textStyle: TextStyle(fontSize: 35, color: Colors.white),
                   ),
                   TypewriterAnimatedText(
                     "Time Keeper",
-                    textStyle: TextStyle(
-                      fontSize: 35,
-                    ),
+                    textStyle: TextStyle(fontSize: 35, color: Colors.white),
                   )
                 ],
               ),
@@ -44,7 +45,8 @@ class _FirstScreenState extends State<FirstScreen> {
             Image.asset("android/image/clock.png"),
           ],
         ),
-        nextScreen: const TimeKeeper(),
+        nextScreen: SignIn(),
+        /*nextScreen: const TimeKeeper(),*/
       ),
     );
   }
